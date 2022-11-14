@@ -1,0 +1,7 @@
+{
+  "name": "pizza-party",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
