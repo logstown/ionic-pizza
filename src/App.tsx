@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import { IonApp, IonNav, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import ViewMessage from './pages/ViewMessage';
@@ -27,7 +27,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
+    {/* <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/" exact={true}>
           <Redirect to="/home" />
@@ -39,7 +39,8 @@ const App: React.FC = () => (
            <ViewMessage />
         </Route>
       </IonRouterOutlet>
-    </IonReactRouter>
+    </IonReactRouter> */}
+    <IonNav root={() => <Home />}></IonNav>
   </IonApp>
 );
 

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Message, getMessage } from '../data/messages';
 import {
   IonBackButton,
   IonButtons,
@@ -18,11 +17,11 @@ import { useParams } from 'react-router';
 import './ViewMessage.css';
 
 function ViewMessage() {
-  const [message, setMessage] = useState<Message>();
+  const [message, setMessage] = useState<any>();
   const params = useParams<{ id: string }>();
 
   useIonViewWillEnter(() => {
-    const msg = getMessage(parseInt(params.id, 10));
+    const msg = 'dude'
     setMessage(msg);
   });
 

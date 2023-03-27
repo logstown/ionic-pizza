@@ -3,14 +3,14 @@ import {
   IonLabel,
   IonNote
   } from '@ionic/react';
-import { Message } from '../data/messages';
+// import { Message } from '../data/toppings';
 import './MessageListItem.css';
 
-interface MessageListItemProps {
-  message: Message;
-}
+// interface MessageListItemProps {
+//   message: Message;
+// }
 
-const MessageListItem: React.FC<MessageListItemProps> = ({ message }) => {
+const MessageListItem: React.FC<any> = ({ message }) => {
   return (
     <IonItem routerLink={`/message/${message.id}`} detail={false}>
       <div slot="start" className="dot dot-unread"></div>
